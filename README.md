@@ -1,59 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🃏 CharacterYuGiOh – Laravel 12 + Vite + API YGOProDeck
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este es un proyecto desarrollado con Laravel 12 en el backend y Vite en el frontend.
+La aplicación consume la API pública de YGOProDeck para mostrar cartas de YU-GI-OH, incluyendo:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Imagen
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Nombre
 
-## Learning Laravel
+- Descripción
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Construido con 🛠️
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+✔️ `Laravel 12` framework que usa PHP para el backend.<br>
+✔️ `Vite` para el frontend mostrar estilos.<br>
+✔️ `PHP 8+` lenguaje de programación.<br>
+✔️ `GuzzleHTTP` cliente para consumir APIs usando php.<br>
+✔️ `Blade` motor de plantillas para Laravel.<br>
+✔️ `Laravel Herd` proporciona: <br>
+        - Servidor local integrado
 
-## Laravel Sponsors
+        - PHP en múltiples versiones
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+        - Composer listo para usar
 
-### Premium Partners
+        - Gestión automática de sitios con dominios locales.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+##  Partida 🚀
+Asegurate de tener php y composer instalado, si no lo tienes puedes usar Laravel Herd
+Descargalo aqui: ![👀](https://herd.laravel.com/docs/windows/getting-started/installation)
 
-## Contributing
+1. Clona el repositorio
+```
+git clone https://github.com/Arm4nd7/Card-Monster-YU-GI-OH.git
+```
+2. Realiza 
+```
+composer install
+composer  update
+```
+3. Realiza 
+```
+npm run install
+```
+### Laravel herd
+En el caso de que hayas instalado Laravel herd
+1. inicializa el aplicativo lavael herd
+2. crea el sitio en `sites/add`
+4. Ahora esta listo abre el sitio que creo Laravel Herd y en tu ide de desarrollo inicia
+```
+npm run dev
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Si no usas Laravel herd
+En este caso solo debes inicializar usando
+```
+php artisan serve
+```
+o
+```
+composer run dev
+```
 
-## Code of Conduct
+## Como funciona❓
+El programa realiza una peticion GET a la API de ![YU-GI-OH](https://db.ygoprodeck.com/api/v7/cardinfo.php).
+Se mostrará
+1. Imagen carta.
+2. Nombre.
+3. Descripción.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🏗️ Estrucutra
+```
+Card-Monster-YU-GI-OH/
+├── app/                   # Lógica del Backend (Controladores, Modelos)
+├── resources/             # Vistas de Blade y assets de Frontend
+│   └── views/             # Archivos .blade.php
+├── public/                # Assets compilados (CSS, JS) e imágenes
+├── routes/                # Definición de rutas (web.php)
+├── vendor/                # Dependencias de Composer
+├── composer.json          # Dependencias de PHP
+├── package.json           # Dependencias de Node (Vite)
+└── README.md              # Documentación del proyecto
+```
 
-## Security Vulnerabilities
+## Gratitud 🎁
+* Gracias a [👀 YU-GI-OH API](https://ygoprodeck.com/api-guide/) para el uso de los datos.
+* Gracias a [👀 Laravel Herd](https://herd.laravel.com/windows) para entorno de desarrollo agil.
+* Gracias a [👀 Laravel Docs HTTP CLIENT](https://laravel.com/docs/12.x/http-client#main-content) para relizar peticiones.
+* Gracias a [👀 Guzzle](https://docs.guzzlephp.org/en/stable/overview.html#installation) para relizar peticiones.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
