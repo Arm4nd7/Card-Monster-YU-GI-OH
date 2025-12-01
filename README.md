@@ -1,6 +1,6 @@
 # 🃏 CharacterYuGiOh – Laravel 12 + Vite + API YGOProDeck
 
-
+![👀](./public/characteryugioh.test.png)
 
 Este es un proyecto desarrollado con Laravel 12 en el backend y Vite en el frontend.
 La aplicación consume la API pública de YGOProDeck para mostrar cartas de YU-GI-OH, incluyendo:
@@ -28,8 +28,8 @@ La aplicación consume la API pública de YGOProDeck para mostrar cartas de YU-G
         - Gestión automática de sitios con dominios locales.
 
 ##  Partida 🚀
-Asegurate de tener php y composer instalado, si no lo tienes puedes usar Laravel Herd
-Descargalo aqui: ![👀](https://herd.laravel.com/docs/windows/getting-started/installation)
+Asegurate de tener php y composer instalado, si no lo tienes puedes usar Laravel Herd.<bre>
+Descargalo aqui: https://herd.laravel.com/docs/windows/getting-started/installation
 
 1. Clona el repositorio
 ```
@@ -42,7 +42,7 @@ composer  update
 ```
 3. Realiza 
 ```
-npm run install
+npm install
 ```
 ### Laravel herd
 En el caso de que hayas instalado Laravel herd
@@ -64,7 +64,7 @@ composer run dev
 ```
 
 ## Como funciona❓
-El programa realiza una peticion GET a la API de ![YU-GI-OH](https://db.ygoprodeck.com/api/v7/cardinfo.php).
+El programa realiza una peticion GET a la API de [YU-GI-OH](https://db.ygoprodeck.com/api/v7/cardinfo.php).
 Se mostrará
 1. Imagen carta.
 2. Nombre.
