@@ -1,0 +1,40 @@
+/* posicion en la mitad */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+}
+
+/* contenedor para el foreach */
+.info-simple, .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+/* tamanio de la imagen */
+img {
+    width: 200px;
+    height: 350px;
+}
